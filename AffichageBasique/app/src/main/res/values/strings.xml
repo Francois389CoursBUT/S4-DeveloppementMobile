@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AffichageBasique</string>
+    <string name="welcom_msg">Bonjour des étudiants de l\'IUT de Rodez</string>
+</resources>

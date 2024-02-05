@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AleatoireFixe</string>
+    <string name="bienvenue">"Bienvenue dans l'application qui génère un nombre aléatoire entre 0 et 99 !"</string>
+    <string name="resultat">"Voici le nombre aléatoire généré : "</string>
+</resources>
