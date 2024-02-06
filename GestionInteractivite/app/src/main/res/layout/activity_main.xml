@@ -1,94 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    >
+    android:stretchColumns="1,2"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/msg_bienvenue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/quinze"
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prix_init"
+            android:layout_column="0"/>
+        <EditText
+            android:id="@+id/prix_init"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/prix_init_hint"
+            android:layout_span="2"
+            android:layout_column="1"
+            android:inputType="numberDecimal"/>
+    </TableRow>
 
-        />
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/taux_reduc"
+            android:layout_column="0"/>
+        <EditText
+            android:id="@+id/taux_reduc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/taux_reduc_hint"
+            android:layout_span="2"
+            android:layout_column="1"
+            android:inputType="number"/>
+    </TableRow>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/epaisseurLigne"
-        android:layout_marginTop="@dimen/quinze"
-        android:layout_marginBottom="@dimen/quinze"
-        android:background="@color/bleu"
-        />
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/economie"
+            android:layout_column="0"/>
+        <EditText
+            android:id="@+id/economie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/economie_hint"
+            android:layout_span="2"
+            android:focusable="false"
+            android:layout_column="1"/>
+    </TableRow>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/choix_pile_face"
-        android:id="@+id/btnPileFace"
-        android:layout_gravity="center"
-        android:layout_marginLeft="@dimen/quinze"
-        android:layout_marginRight="@dimen/quinze"
-        android:onClick="onClickPileFace"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/choix_de_6"
-        android:id="@+id/btnDe6"
-        android:layout_gravity="center"
-        android:layout_marginLeft="@dimen/quinze"
-        android:layout_marginRight="@dimen/quinze"
-        android:onClick="onClickDe6"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/choix_tirage_loto"
-        android:id="@+id/btnTirageLoto"
-        android:layout_gravity="center"
-        android:layout_marginLeft="@dimen/quinze"
-        android:layout_marginRight="@dimen/quinze"
-        android:onClick="onClickTirageLoto"
-        />
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_payer"
+            android:layout_column="0"/>
+        <EditText
+            android:id="@+id/a_payer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/a_payer_hint"
+            android:layout_span="2"
+            android:focusable="false"
+            android:layout_column="1"/>
+    </TableRow>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/epaisseurLigne"
-        android:layout_marginTop="@dimen/quinze"
-        android:layout_marginBottom="@dimen/quinze"
-        android:background="@color/bleu"
-        />
-
-    <TextView
-        android:id="@+id/txtResultat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/msg_resultat_placehloder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_gravity="center"
-        />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/epaisseurLigne"
-        android:layout_marginTop="@dimen/quinze"
-        android:layout_marginBottom="@dimen/quinze"
-        android:background="@color/bleu"
-        />
+    <TableRow>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculer"
+            android:onClick="calculer"
+            android:layout_column="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/annuler"
+            android:onClick="annuler"
+            android:layout_column="2"/>
+    </TableRow>
 
 
-
-</LinearLayout>
+</TableLayout>
