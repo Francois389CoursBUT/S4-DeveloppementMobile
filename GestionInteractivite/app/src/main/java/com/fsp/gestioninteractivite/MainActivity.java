@@ -31,21 +31,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calculer(View view) {
-        double prixInitial = Double.parseDouble(inputPrixInitial.getText().toString());
-        double tauxReduction = Double.parseDouble(inputTauxReduction.getText().toString());
+        String prixInitialTxt = inputPrixInitial.getText().toString();
+        String tauxReductionTxt = inputTauxReduction.getText().toString();
 
-        if (100 <= tauxReduction && 0 < prixInitial && 0 < tauxReduction) {
-            double economieRealisee = prixInitial * tauxReduction / 100;
-            double prixAPayer = prixInitial - economieRealisee;
-
-            inputEconomieRealisee.setText(String.valueOf(economieRealisee));
-            inputPrixAPayer.setText(String.valueOf(prixAPayer));
+        if (prixInitialTxt.isEmpty() || tauxReductionTxt.isEmpty()) {
+            Toast.makeText(this, "Champs vide !", Toast.LENGTH_LONG).show();
         } else {
-            //Afficher un toast pour afficher un message d'erreur
 
-            Toast.makeText(this, "Le taux de réduction doit être supérieur ou égal à 100", Toast.LENGTH_LONG).show();
+            double prixInitial = Double.parseDouble(prixInitialTxt);
+            double tauxReduction = Double.parseDouble(tauxReductionTxt);
 
+            if (tauxReduction <= 100) {
+                double economieRealisee = prixInitial * tauxReduction / 100;
+                double prixAPayer = prixInitial - economieRealisee;
+
+                inputEconomieRealisee.setText(String.valueOf(economieRealisee));
+                inputPrixAPayer.setText(String.valueOf(prixAPayer));
+            } else {
+                //Afficher un toast pour afficher un message d'erreur
+
+                Toast.makeText(this, "Le taux de réduction doit être supérieur ou égal à 100", Toast.LENGTH_LONG).show();
+
+            }
         }
+
     }
 
     public void annuler(View view) {
