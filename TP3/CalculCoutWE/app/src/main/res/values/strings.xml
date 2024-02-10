@@ -1,3 +1,35 @@
 <resources>
-    <string name="app_name">CalculCoutWE</string>
+    <string name="app_name">EstimationWeekEnd</string>
+
+    <string name="msg_debut_changer_air">"Envie de changer d'air ?"</string>
+    <string name="msg_debut_estimation">"Estimation du coût d'un week-end"</string>
+    <string name="msg_debut_prolonge_ou_pas">Prolongé ou pas !</string>
+
+    <string name="content_description_avion">"Un avion en vol"</string>
+
+    <string name="label_nb_jours">Nombre de jours :</string>
+    <string name="nb_nuit_2">2</string>
+    <string name="nb_nuit_3">3</string>
+    <string name="nb_nuit_4">4</string>
+    <string name="nb_nuit_5">5</string>
+
+    <string name="label_budget_transport">Budget transport :</string>
+    <string name="hint_budget_transport">Aller-retour</string>
+
+    <string name="label_budget_par_nuit">Budget par nuit :</string>
+    <string name="hint_budget_par_nuit">Avec petit-déjeuner</string>
+
+    <string name="label_budget_par_repas">Budget par repas :</string>
+    <string name="hint_budget_par_repas">Prix moyen</string>
+
+    <string name="label_inclure_2_repas_dernier_jour">Inclure deuxieme repas dernier jour</string>
+
+    <string name="label_budget_visites">Budget visites/sortie par jour :</string>
+    <string name="hint_budget_visites">Visite / extra</string>
+
+    <string name="label_estimation">Estimation du coût :</string>
+    <string name="hint_estimation">Resultat calculé</string>
+
+    <string name="btn_calculer">Calculer</string>
+    <string name="btn_annuler">Annuler</string>
 </resources>
