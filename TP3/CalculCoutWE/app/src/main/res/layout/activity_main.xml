@@ -17,10 +17,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_span="3"
             android:text="@string/msg_debut_changer_air"
             android:textColor="@color/msg_debut"
             android:textSize="@dimen/text_size_10sp"
-            android:layout_span="3"
             android:textStyle="bold" />
     </TableRow>
 
@@ -32,10 +32,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_span="3"
             android:text="@string/msg_debut_estimation"
             android:textColor="@color/msg_debut"
             android:textSize="@dimen/text_size_10sp"
-            android:layout_span="3"
             android:textStyle="bold" />
     </TableRow>
 
@@ -47,10 +47,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_span="3"
             android:text="@string/msg_debut_prolonge_ou_pas"
             android:textColor="@color/msg_debut"
             android:textSize="@dimen/text_size_10sp"
-            android:layout_span="3"
             android:textStyle="bold" />
     </TableRow>
 
@@ -62,8 +62,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:contentDescription="@string/content_description_avion"
             android:layout_span="3"
+            android:contentDescription="@string/content_description_avion"
             android:src="@drawable/avion" />
 
     </TableRow>
@@ -79,48 +79,44 @@
             android:textSize="@dimen/text_size_10sp" />
     </TableRow>
 
-    <TableRow
+
+    <RadioGroup
+        android:id="@+id/radioGroupNbJours"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_span="3"
+        android:orientation="horizontal">
 
-        <RadioGroup
-            android:id="@+id/radioGroupNbJours"
-            android:layout_width="match_parent"
+        <RadioButton
+            android:id="@+id/radioButton2Jours"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_span="3"
-            android:orientation="horizontal">
+            android:layout_marginHorizontal="@dimen/radio_btn_margin"
+            android:checked="true"
+            android:text="@string/nb_nuit_2" />
 
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:layout_marginHorizontal="@dimen/radio_btn_margin"
-                android:text="@string/nb_nuit_2" />
+        <RadioButton
+            android:id="@+id/radioButton3Jours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/radio_btn_margin"
+            android:text="@string/nb_nuit_3" />
 
-            <RadioButton
-                android:id="@+id/radioButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/radio_btn_margin"
-                android:text="@string/nb_nuit_3" />
+        <RadioButton
+            android:id="@+id/radioButton4Jours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/radio_btn_margin"
+            android:text="@string/nb_nuit_4" />
 
-            <RadioButton
-                android:id="@+id/radioButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/radio_btn_margin"
-                android:text="@string/nb_nuit_4" />
-
-            <RadioButton
-                android:id="@+id/radioButton5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/radio_btn_margin"
-                android:text="@string/nb_nuit_5" />
-        </RadioGroup>
-    </TableRow>
+        <RadioButton
+            android:id="@+id/radioButton5Jours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/radio_btn_margin"
+            android:text="@string/nb_nuit_5" />
+    </RadioGroup>
 
     <TableRow
         android:layout_width="match_parent"
@@ -245,6 +241,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
+            android:onClick="calculer"
             android:text="@string/btn_calculer"
             android:textSize="@dimen/text_size_10sp" />
 
@@ -253,6 +250,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="2"
+            android:onClick="annuler"
             android:text="@string/btn_annuler"
             android:textSize="@dimen/text_size_10sp" />
     </TableRow>
