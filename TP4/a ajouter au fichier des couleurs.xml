@@ -1,0 +1,10 @@
+
+
+    <!-- couleur du titre et du sous-titre -->
+    <color name="couleurSousTitre">#06949E</color>
+    <color name="couleurTitre">#0E8891</color>
+
+    <!-- autres couleurs -->
+    <color name="couleurFondBouton">#A5DDE1</color>
+    <color name="couleurLibelle">#082D73</color>
+

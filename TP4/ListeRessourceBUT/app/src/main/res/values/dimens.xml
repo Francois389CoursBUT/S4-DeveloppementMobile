@@ -1,0 +1,11 @@
+<!-- dimensions pour l'applications qui affiche les modules du Semestre 4 du DUT informatique -->
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="petite_marge">10dp</dimen>
+
+    <!-- taille des textes -->
+    <dimen name="taille_libelle_bouton">15sp</dimen>
+    <dimen name="taille_titre">20sp</dimen>
+</resources>
