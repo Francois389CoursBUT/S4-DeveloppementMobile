@@ -3,7 +3,7 @@
      strings.xml -->
 <resources>
 
-    <string name="app_name">ListeRessourcesBUTS4</string>
+    <string name="app_name" translatable="false">ListeRessourcesBUTS4</string>
 
     <!-- texte de la ligne de titre -->
     <string name="texte_titre">Liste des ressources du semestre 4</string>

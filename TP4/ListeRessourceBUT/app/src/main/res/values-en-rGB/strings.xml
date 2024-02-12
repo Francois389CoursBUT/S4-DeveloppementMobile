@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ListeRessourcesBUTS4</string>
+    <string name="btn_libelle_tous">All ressources</string>
+    <string name="btn_libelle_commun">Commun Ressources</string>
+</resources>
