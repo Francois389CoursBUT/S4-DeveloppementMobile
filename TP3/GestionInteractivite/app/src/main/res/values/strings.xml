@@ -1,8 +1,17 @@
 <resources>
-    <string name="app_name">GestionInteractivite</string>
-    <string name="msg_bienvenue">Bienvenue dans l\'application qui génère des valeurs aléatoire</string>
-    <string name="choix_pile_face">Pile / Face</string>
-    <string name="choix_de_6">Lancement d\'un dé de : 1 à 6</string>
-    <string name="choix_tirage_loto">Tirage du loto : 1 à 69</string>
-    <string name="msg_resultat_placehloder">Le résultat du tirage s\'affichera ici !</string>
+    <string name="app_name">CalculReduction</string>
+
+    <string name="prix_init">Prix initial :</string>
+    <string name="prix_init_hint">Prix avec les centimes</string>
+    <string name="taux_reduc">Taux de réduction :</string>
+    <string name="taux_reduc_hint">% réduction ( de 0 à 100 )</string>
+    <string name="economie">Economie réalisée :</string>
+    <string name="economie_hint">Résultat claculé</string>
+    <string name="a_payer">A payer :</string>
+    <string name="a_payer_hint">Résultat claculé</string>
+
+    <string name="calculer">Calculer</string>
+    <string name="annuler">Annuler</string>
+
+
 </resources>
