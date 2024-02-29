@@ -135,6 +135,7 @@
             android:layout_column="2"
             android:hint="@string/hint_budget_transport"
             android:inputType="numberDecimal"
+            android:maxLength="10"
             android:textSize="@dimen/text_size_10sp" />
     </TableRow>
 
@@ -155,6 +156,7 @@
             android:layout_column="2"
             android:hint="@string/hint_budget_par_nuit"
             android:inputType="numberDecimal"
+            android:maxLength="10"
             android:textSize="@dimen/text_size_10sp" />
     </TableRow>
 
@@ -175,6 +177,7 @@
             android:layout_column="2"
             android:hint="@string/hint_budget_par_repas"
             android:inputType="numberDecimal"
+            android:maxLength="10"
             android:textSize="@dimen/text_size_10sp" />
     </TableRow>
 
@@ -209,6 +212,7 @@
             android:layout_column="2"
             android:hint="@string/hint_budget_visites"
             android:inputType="numberDecimal"
+            android:maxLength="10"
             android:textSize="@dimen/text_size_10sp" />
     </TableRow>
 

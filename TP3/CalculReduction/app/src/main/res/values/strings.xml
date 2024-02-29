@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CalculReduction</string>
+
+    <string name="prix_init">Prix initial :</string>
+    <string name="prix_init_hint">Prix avec les centimes</string>
+    <string name="taux_reduc">Taux de réduction :</string>
+    <string name="taux_reduc_hint">% réduction ( de 0 à 100 )</string>
+    <string name="economie">Economie réalisée :</string>
+    <string name="economie_hint">Résultat claculé</string>
+    <string name="a_payer">A payer :</string>
+    <string name="a_payer_hint">Résultat claculé</string>
+
+    <string name="calculer">Calculer</string>
+    <string name="annuler">Annuler</string>
+
+
+</resources>
