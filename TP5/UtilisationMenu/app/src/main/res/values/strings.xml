@@ -1,0 +1,83 @@
+<!-- chaînes de caractères de l'application consulter la liste des ressources du
+     semestre 4 du BUT Informatique
+     strings.xml -->
+<resources>
+
+    <string name="app_name" translatable="false">ListeRessourcesBUTS4</string>
+
+    <!-- texte de la ligne de titre -->
+    <string name="texte_titre">Liste des ressources du semestre 4</string>
+
+    <!-- libellés des boutons -->
+    <string name="btn_libelle_tous">Toutes les ressources</string>
+    <string name="btn_libelle_commun">Ressources Tronc Commun</string>
+    <string name="btn_libelle_axeA">Ressources Parcours A</string>
+    <string name="btn_libelle_axeB">Ressources Parcours D</string>
+
+    <!-- message pour confirmer le clic sur une ressource -->
+    <string name="message_toast">Vous avez sélectionné la ressource %s. Merci !</string>
+    <string name="message_toast_coef">"Vous avez sélectionné la ressource %s. "
+                                      "Son coefficient est %.1f"</string>
+
+    <!-- tableau des ressources du tronc commun -->
+    <string-array name="tronc_commun">
+        <item name="r4_01">Architecture logicielle</item>
+        <item name="r4_02">Qualité de développement</item>
+        <item name="r4_03">Qualité et au-delà du relationnel</item>
+        <item name="r4_04">"Méthodes d'optimisation"</item>
+        <item name="r4_05">Anglais</item>
+        <item name="r4_06">Communication interne</item>
+        <item name="r4_07">PPP</item>
+    </string-array>
+
+    <!-- tableau des ressources du parcours A-->
+    <string-array name="parcours_A">
+        <item name="R4_A_08">Virtualisation</item>
+        <item name="R4_A_09">"Management avancé des systèmes d'information"</item>
+        <item name="R4_A_10">Complément web</item>
+        <item name="R4_A_11">Développement pour applications mobiles</item>
+        <item name="R4_A_12">Automates et langages</item>
+    </string-array>
+
+    <!-- tableau des ressources du parcours B-->
+    <string-array name="parcours_B">
+        <item name="R4_D_08">Réseau avancé</item>
+        <item name="R4_D_09">Outils mathématiques pour la gestion</item>
+        <item name="R4_D_10">Management avancé des SI</item>
+    </string-array>
+
+    <!-- tableau des coefficients des ressources du parcours A
+         ATTENTION : les valeurs sont fictives
+                     et sont multipliées par 10 -->
+    <integer-array name="coef_parcours_A">
+        <item name="R4_A_08">20</item>
+        <item name="R4_A_09">21</item>
+        <item name="R4_A_10">22</item>
+        <item name="R4_A_11">23</item>
+        <item name="R4_A_12">24</item>
+    </integer-array>
+
+    <!-- tableau des coefficients des ressources du parcours B
+         ATTENTION : les valeurs sont fictives
+                     et sont multipliées par 10 -->
+    <integer-array name="coef_parcours_B">
+        <item name="R4_D_08">30</item>
+        <item name="R4_D_09">31</item>
+        <item name="R4_D_10">32</item>
+    </integer-array>
+
+    <!-- tableau des coefficients des ressources du tronc commun
+         ATTENTION : les valeurs sont fictives
+                     et sont multipliées par 10 -->
+    <integer-array name="coef_tronc_commun">
+        <item name="r4_01">10</item>
+        <item name="r4_02">11</item>
+        <item name="r4_03">12</item>
+        <item name="r4_04">13</item>
+        <item name="r4_05">14</item>
+        <item name="r4_06">15</item>
+        <item name="r4_07">16</item>
+    </integer-array>
+
+</resources>
+

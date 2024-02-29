@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.UtilisationMenu" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.UtilisationMenu" parent="Base.Theme.UtilisationMenu" />
+
+    <!-- style des boutons -->
+    <style name="StyleBouton">
+        <item name="backgroundTint">@color/couleurFondBouton</item>
+        <item name="android:textColor">@color/couleurLibelle</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/petite_marge</item>
+        <item name="android:textSize">@dimen/taille_libelle_bouton</item>
+    </style>
+
+
+</resources>
