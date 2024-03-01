@@ -79,5 +79,10 @@
         <item name="r4_07">16</item>
     </integer-array>
 
+    <!-- libellé des actions du menu contextuel -->
+    <string name="action_voir_coef">Voir le coefficient</string>
+    <string name="action_voir_axe">Voir l\'axe</string>
+    <string name="action_annuler">Annuler</string>
+
 </resources>
 

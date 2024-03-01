@@ -23,31 +23,6 @@
         android:textSize="@dimen/taille_titre"
         android:textStyle="bold" />
 
-    <!-- 4 boutons permettant de choisir la liste à afficher  :
-            - tous les modules
-            - seulement ceux du tronc commun
-            - seulement ceux de l'axe A
-            - seulement ceux de l'axe B -->
-    <Button
-        style="@style/StyleBouton"
-        android:onClick="clicTous"
-        android:text="@string/btn_libelle_tous" />
-
-    <Button
-        style="@style/StyleBouton"
-        android:onClick="clicTroncCommun"
-        android:text="@string/btn_libelle_commun" />
-
-    <Button
-        style="@style/StyleBouton"
-        android:onClick="clicAxeA"
-        android:text="@string/btn_libelle_axeA" />
-
-    <Button
-        style="@style/StyleBouton"
-        android:onClick="clicAxeB"
-        android:text="@string/btn_libelle_axeB" />
-
     <!-- liste des modules sélectionnés -->
     <ListView
         android:id="@+id/liste_module"

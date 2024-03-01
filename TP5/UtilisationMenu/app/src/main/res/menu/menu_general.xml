@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/option_afficher_tous"
+        android:title="@string/btn_libelle_tous"/>
+    <item
+        android:id="@+id/option_afficher_commun"
+        android:title="@string/btn_libelle_commun"/>
+    <item
+        android:id="@+id/option_afficher_axeA"
+        android:title="@string/btn_libelle_axeA"/>
+    <item
+        android:id="@+id/option_afficher_axeB"
+        android:title="@string/btn_libelle_axeB"/>
+</menu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_voir_coef"
+        android:title="@string/action_voir_coef"
+        />
+    <item
+        android:id="@+id/action_voir_axe"
+        android:title="@string/action_voir_axe"
+        />
+    <item
+        android:id="@+id/action_annuler"
+        android:title="@string/action_annuler"
+        />
+
+</menu>

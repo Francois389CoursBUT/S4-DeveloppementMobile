@@ -3,4 +3,7 @@
     <string name="app_name">ListeRessourcesBUTS4</string>
     <string name="btn_libelle_tous">All ressources</string>
     <string name="btn_libelle_commun">Commun Ressources</string>
+    <string name="action_voir_coef">Show coef</string>
+    <string name="action_voir_axe">Show axe</string>
+    <string name="action_annuler">Cancel</string>
 </resources>
