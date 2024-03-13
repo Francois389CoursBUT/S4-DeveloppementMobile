@@ -1,0 +1,36 @@
+<!-- ressources pour l'application CalculDate -->
+<resources>
+
+    <!-- Nom de l'application et intitulés des activités filles-->
+    <string name="app_name">CalculDate</string>
+    <string name="message_bienvenue">Bienvenue dans l\'application de gestion des dates !</string>
+    <string name="activite_jour">Jour de la semaine</string>
+    <string name="activite_ecart">Ecart entre 2 dates</string>
+
+    <!-- Chaînes utilisées dans l'activité permettant de rechercher le jour d'un date -->
+    <string name="label_intro_jour1">Recherche du jour de la semaine associé à une date.</string>
+    <string name="label_intro_jour2">Choisissez une date</string>
+    <string name="resultat_jour">"Le jour de la semaine est "</string>
+
+    <!-- Chaînes utilisées dans l'onglet permettant de calculer l'écart entre 2 dates -->
+    <string name="label_intro_ecart1">Recherche du nombre de jours qui séparent 2 dates.</string>
+    <string name="label_intro_ecart2">Choisissez 2 dates</string>
+    <string name="label_date1">Première date : </string>
+    <string name="label_date2">Deuxième date : </string>
+    <string name="resultat_ecart">" jour(s) sépare(nt) ces 2 dates" </string>
+
+    <!-- Label des boutons situés dans les activités filles -->
+    <string name="bouton_rechercher">Rechercher</string>
+    <string name="bouton_raz">RAZ</string>
+    <string name="bouton_retour">Retour</string>
+
+    <!-- Label des boutons situés dans l'activité principale -->
+    <string name="bouton_ecart">Ecart entre 2 dates</string>
+    <string name="bouton_jour_semaine">Jour de la semaine</string>
+
+    <!-- Messages affichés au retour d'une activité fille -->
+    <string name="merci_recherche_jour">Merci d\'avoir utilisé la recherche du jour ! </string>
+    <string name="merci_ecart_date">Merci d\'avoir utilisé le calcul d\'écart ! </string>
+    <string name="recherche_jour_sans_clic">"Retour de la recherche du jour !"</string>
+    <string name="ecart_date_sans_clic">"Retour du calcul de l'écart entre date !" </string>
+</resources>
