@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hauteur_barre">2dp</dimen>
+    <dimen name="taille_titre">18sp</dimen>
+
+    <!-- valeurs des marges -->
+    <dimen name="petite_marge">10dp</dimen>
+    <dimen name="tres_petite_marge">5dp</dimen>
+</resources>

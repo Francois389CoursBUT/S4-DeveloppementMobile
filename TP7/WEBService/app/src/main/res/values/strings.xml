@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">WEB Service</string>
+    <string name="app_name">WebServiceGeoVolley</string>
+
+    <string name="txt_message_titre_general">"Recherche commune / code postal"</string>
+
+    <string name="txt_message_titre1">"Quelle commune ?"</string>
+    <string name="txt_message_titre2">"Quel code postal ?"</string>
+    <string name="txt_etiquette_code_postal">Code postal :</string>
+    <string name="txt_etiquette_departement">Département :</string>
+    <string name="txt_etiquette_commune">Commune :</string>
+    <string name="txt_btn_rechercher">Rechercher</string>
+    <string name="txt_btn_annuler">Annuler</string>
+
+    <string name="code_postal_non_trouve">"La commune %s n'a pas été trouvée dans ce département"</string>
+
+    <!-- message d'erreur -->
+    <string name="message_erreur">Problème connexion</string>
+    <string name="message_erreur_connexion">Impossible de se connecter au réseau !</string>
+    <string name="message_erreur_encodage">"Erreur lors de l'encodage de la requête"</string>
+    <string name="message_saisie_manquante">"Erreur saisie incomplète"</string>
 </resources>

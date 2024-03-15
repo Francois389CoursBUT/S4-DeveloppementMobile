@@ -1,19 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/tres_petite_marge"
+    android:orientation="vertical">
+
+    <!-- Titre général et sous-titre 1 "Recherche par code postal" -->
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:layout_marginVertical="@dimen/petite_marge"
+        android:textSize="@dimen/taille_titre"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:text="@string/txt_message_titre_general" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/petite_marge"
+        android:textSize="@dimen/taille_titre"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:text="@string/txt_message_titre1" />
+
+
+
+    <!-- Saisie du code postal = 5 chiffres -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="@dimen/petite_marge"
+        android:text="@string/txt_etiquette_code_postal" />
+
+    <EditText
+        android:id="@+id/saisie_code_postal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="5"/>
+
+    <!-- Boutons rechercher et annuler -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/petite_marge"
+        android:text="@string/txt_btn_rechercher"
+        android:backgroundTint="@color/couleur_fond_bouton"
+        android:textColor="@color/black"
+        android:onClick="clicRechercher"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_btn_annuler"
+        android:backgroundTint="@color/couleur_fond_bouton"
+        android:textColor="@color/black"
+        android:onClick="clicAnnuler"/>
+
+    <!-- pour afficher le résultat de la recherche -->
+    <TextView
+        android:id="@+id/zone_resultat"
+        android:layout_marginTop="@dimen/petite_marge"
+        android:maxLines="6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hauteur_barre"
+        android:layout_marginTop="@dimen/petite_marge"
+        android:layout_marginBottom="@dimen/petite_marge"
+        android:background="@color/teal_700" />
+
+
+    <!-- Sous-titre 2 "Recherche par département et commune" -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="@dimen/petite_marge"
+        android:textSize="@dimen/taille_titre"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:text="@string/txt_message_titre2" />
+
+    <!-- Saisie du département -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="@dimen/petite_marge"
+        android:text="@string/txt_etiquette_departement" />
+
+    <EditText
+        android:id="@+id/saisie_departement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="2"/>
+
+    <!-- Saisie de la commune -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:layout_marginTop="@dimen/petite_marge"
+        android:text="@string/txt_etiquette_commune" />
+
+    <EditText
+        android:id="@+id/saisie_commune"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/petite_marge"/>
+
+    <!-- Boutons rechercher et annuler -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/petite_marge"
+        android:text="@string/txt_btn_rechercher"
+        android:backgroundTint="@color/couleur_fond_bouton"
+        android:textColor="@color/black"
+        android:onClick="clicRechercherCode"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_btn_annuler"
+        android:backgroundTint="@color/couleur_fond_bouton"
+        android:textColor="@color/black"
+        android:onClick="clicAnnulerCode"/>
+
+    <!-- pour afficher le résultat de la recherche -->
+    <TextView
+        android:id="@+id/zone_resultat_code"
+        android:layout_marginTop="@dimen/petite_marge"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+</ScrollView>
